@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        const distancia = parseInt(prompt('¡Hola! Espero que estés muy bien. Voy a ayudarte a decidir tu medio de transporte, ingresá el valor en metros. ¿A qué distancia queda tu destino?',''));
+            if (distancia < 1000) {
+                document.write(`Te recomiendo llegar a tu destino a pie. Tu recorrido será de ${distancia/1000}km.`)
+            }
+            
+            if (distancia > 1000 && distancia < 10000){
+                document.write(`Te recomiendo llegar a tu destino en colectivo. Tu recorrido será de ${distancia/1000}km.`)
+            }
+
+            if (distancia > 30000 && distancia < 100000){
+                document.write(`Te recomiendo llegar a tu destino en auto. Tu recorrido será de ${distancia/1000}km.`)
+            }
+            if (distancia > 100000){
+                document.write(`Te recomiendo llegar a tu destino en avión. Tu recorrido será de ${distancia/1000}km.`)
+            }
+            if (distancia == 1000){
+                document.write (`Podés ir a pie o en bici!. Tu recorrido será de ${distancia/1000}km.`)           
+            }
+            if (distancia == 10000){
+                document.write (`Podés ir en bici, o en colectivo. ¡Dale!. Pedalear hace bien y es más barato. Tu recorrido será de ${distancia/1000}km.`)
+            }
+            if (distancia == 30000){
+                document.write(`Podés ir en colectivo, o en auto. ¡Tomate el bondi y ahorrá!. Tu recorrido será de ${distancia/1000}km.`)
+            }
+            if(distancia == 100000){
+                document.write(`Podés ir en auto o en avión. ¡Manejar agota! pero el avión está muy caro... Tu recorrido será de ${distancia/1000}km.`)
+            }
+           
+    </script>
+    
+</body>
+</html>
